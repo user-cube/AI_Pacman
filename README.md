@@ -11,6 +11,24 @@ $ python3 -m venv venv
 $ source venv/bin/activate
 $ pip install -r requirements.txt
 ```
+* Intall xterm:
+
+Ubuntu based:
+```
+$ sudo apt update
+$ sudo apt install xterm
+```
+Fedora:
+```
+$ sudo dnf update
+$ sudo dnf install xterm
+```
+
+Arch based:
+```
+$ yaourt xterm
+```
+
 # How to run:
 Run: 
 ```
