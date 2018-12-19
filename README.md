@@ -1,4 +1,4 @@
-# iia-ia-pacman
+# Artificial Inteligence - Pacman
 Client-Server PACMAN clone
 
 # Install
