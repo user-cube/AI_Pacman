@@ -12,24 +12,27 @@ $ source venv/bin/activate
 $ pip install -r requirements.txt
 ```
 # How to run:
-Open 3 terminals, in each terminal runonce:
-```console
-$ source venv/bin/activate
+Run: 
 ```
-Run each application in it's terminal:
+source venv/bin/actibate
+```
+After that execute:
+```
+$ ./run.sh
+```
+
+## Multiple executions
+Open 2 terminals and run:
 
 Terminal 1:
-```console
-$ python server.py
+```
+$ ./deployServer.sh
 ```
 Terminal 2:
-```console
-$ python viewer.py
 ```
-Terminal 3:
-```console
-$ python client.py
+$ python3 multiple.py
 ```
+
 
 # Credits
 Sprites from https://github.com/rm-hull/big-bang/tree/master/examples/pacman/data
