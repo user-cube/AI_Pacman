@@ -2,20 +2,24 @@ import pygame
 import logging
 from enum import Enum
 import platform
-
+import os
 WALL = 0xff000000
 ENERGY = 0xffffd7d6
 BOOST = 0xffff2600
 PACMAN = 0xffd4fdd5
 GHOST = 0xff00f900
+# check for windows and raspberry pi
+try:
+    if platform.system() == "Windows" or os.uname().machine.startswith("arm"):
+        MASK = 0xFFFFFFFF
+        WALL = ~(WALL ^ MASK)
+        ENERGY = ~(ENERGY ^ MASK)
+        BOOST = ~(BOOST ^ MASK)
+        PACMAN = ~(PACMAN ^ MASK)
+        GHOST = ~(GHOST ^ MASK)
 
-if platform.system() == "Windows":
-    MASK = 0xFFFFFFFF
-    WALL = ~(WALL ^ MASK)
-    ENERGY = ~(ENERGY ^ MASK)
-    BOOST = ~(BOOST ^ MASK)
-    PACMAN = ~(PACMAN ^ MASK)
-    GHOST = ~(GHOST ^ MASK)
+except AttributeError:
+    pass
 
 class Tiles(Enum):
     ENERGY = 1
