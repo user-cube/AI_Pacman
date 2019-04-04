@@ -3,6 +3,7 @@ import logging
 from enum import Enum
 import platform
 import os
+
 WALL = 0xff000000
 ENERGY = 0xffffd7d6
 BOOST = 0xffff2600
