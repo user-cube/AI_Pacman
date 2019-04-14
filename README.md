@@ -51,11 +51,6 @@ Terminal 2:
 $ python3 multiple.py
 ```
 
-
-## Credits
-Sprites from https://github.com/rm-hull/big-bang/tree/master/examples/pacman/data
-
-
 ## Runing into Raspberry Pi
 If you are running into a Raspberry Pi you should consider use python 3.7.
 <details><summary>Show me how to do it!</summary>
@@ -125,3 +120,6 @@ Now run (takes a while):
 $ pip install -r requirements.txt
 ```
 </details>
+
+## Credits
+Sprites from https://github.com/rm-hull/big-bang/tree/master/examples/pacman/data
