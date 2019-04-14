@@ -58,6 +58,7 @@ Sprites from https://github.com/rm-hull/big-bang/tree/master/examples/pacman/dat
 
 ## Runing into Raspberry Pi
 If you are running into a Raspberry Pi you should consider use python 3.7.
+<details><summary>Show me how to do it!</summary>
 
 ### Upgrading to Python 3.7.0
 First install the dependencies needed to build.
@@ -121,5 +122,6 @@ $ sudo python3 setup.py install
 ```
 Now run:
 ```console
-$ $ pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
+</details>
