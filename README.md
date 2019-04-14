@@ -1,5 +1,5 @@
 # Artificial Inteligence - Pacman
-Client-Server PACMAN clone
+Client-Server PACMAN game using A*.
 
 ## Install
 
