@@ -107,12 +107,14 @@ $ sudo apt-get install git python3-dev python3-setuptools python3-numpy python3-
 ```
 Grab source
 ```console 
-$ git clone https://github.com/pygame/pygame.git 
+$ wget https://github.com/pygame/pygame/archive/1.9.4.zip
+$ unzip 1.9.4.zip
+$ mv pygame-1.9.4/ pygame
 ```
 Finally build and install
 ```console
 $ cd pygame
-$ python3 setup.py build
+$ python3.7 setup.py build
 $ sudo python3 setup.py install
 ```
 Now run (takes a while):
