@@ -239,10 +239,13 @@ async def main_loop(q):
                 for i in range(10):
                     if i == 5:
                         c = 1
-                    draw_info(SCREEN, RANKS[i+1], scale((2,i+6)), list(COLORS.values())[c], BACKGROUND)
-                    draw_info(SCREEN, str(highscores[i][1]), scale((6,i+6)), list(COLORS.values())[c], BACKGROUND)
-                    draw_info(SCREEN, highscores[i][0], scale((11,i+6)), list(COLORS.values())[c], BACKGROUND)
-                    c += 1
+                    try:
+                        draw_info(SCREEN, RANKS[i+1], scale((2,i+6)), list(COLORS.values())[c], BACKGROUND)
+                        draw_info(SCREEN, str(highscores[i][1]), scale((6,i+6)), list(COLORS.values())[c], BACKGROUND)
+                        draw_info(SCREEN, highscores[i][0], scale((11,i+6)), list(COLORS.values())[c], BACKGROUND)
+                        c += 1
+                    except:
+                        c +=1
 
         newstate = state
 
